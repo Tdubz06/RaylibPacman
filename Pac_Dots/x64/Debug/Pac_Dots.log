@@ -1,8 +1,12 @@
 ﻿  Pac_Dots.cpp
-C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(103,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(103,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(103,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(103,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(99,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(99,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(99,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(99,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(123,31): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(123,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(123,44): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\COLE.LAMB15\source\repos\Pac_Dots\Pac_Dots\Pac_Dots.cpp(123,44): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   Pac_Dots.vcxproj -> C:\Users\COLE.LAMB15\source\repos\Pac_Dots\x64\Debug\Pac_Dots.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

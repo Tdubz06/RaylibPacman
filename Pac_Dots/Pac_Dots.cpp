@@ -42,11 +42,7 @@ int main()
 
 	int score = 0;
 
-
-
 	InitWindow(screenWidth, screenHeight, "Pac Dots");
-
-
 
 	SetTargetFPS(60);
 
@@ -87,7 +83,7 @@ int main()
 				DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 3, WHITE);
 			}
 
-			// When pacman collides with a pellet, the pellet is removed from the map
+			// When pacman collides with a pellet, the pellet is removed from the map and checks with score counter
 			if (pacman.x == i % 28 * 20 && pacman.y == i / 28 * 20 && map[i] == '7') {
 				map[i] = '0';
 				score++;
@@ -121,6 +117,29 @@ int main()
 			pacman.y += 2;
 		}
 	
+		// using raylib collision detection to stop pacman from moving through walls
+		for (int i = 0; i < map.length(); i++) {
+			if (map[i] == '1' || map[i] == '2' || map[i] == '3' || map[i] == '4' || map[i] == '5' || map[i] == '6') {
+				Rectangle wall = { i % 28 * 20, i / 28 * 20, 20, 20 };
+				if (CheckCollisionRecs(pacman, wall)) {
+					if (pacman.x < wall.x) {
+						pacman.x -= 2;
+					}
+					if (pacman.x > wall.x) {
+						pacman.x += 2;
+					}
+					if (pacman.y < wall.y) {
+						pacman.y -= 2;
+					}
+					if (pacman.y > wall.y) {
+						pacman.y += 2;
+					}
+
+				}
+
+			}
+		}
+
 		
 
 	
