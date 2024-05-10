@@ -1,0 +1,6 @@
+﻿  BetterFruit.cpp
+C:\Users\COLE.LAMB15\source\repos\BetterFruit\BetterFruit\BetterFruit.cpp(74,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\COLE.LAMB15\source\repos\BetterFruit\BetterFruit\BetterFruit.cpp(75,28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  BetterFruit.vcxproj -> C:\Users\COLE.LAMB15\source\repos\BetterFruit\x64\Debug\BetterFruit.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
