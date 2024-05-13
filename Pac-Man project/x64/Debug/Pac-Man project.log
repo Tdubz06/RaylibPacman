@@ -1,0 +1,16 @@
+﻿  Pac-Man project.cpp
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(179,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(179,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(179,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(179,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(183,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(183,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(183,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(183,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(251,48): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(251,48): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(251,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\Pac-Man project.cpp(251,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Pac-Man project.vcxproj -> C:\Users\unive\source\repos\Pac-Man project\x64\Debug\Pac-Man project.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
