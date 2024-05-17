@@ -1,1 +1,4 @@
 C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\x64\Debug\Pac-Man .50BA23E9.Up2Date
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.exe
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.vcxproj.CopyComplete
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev\Pac-Man project\x64\Debug\raylib.dll

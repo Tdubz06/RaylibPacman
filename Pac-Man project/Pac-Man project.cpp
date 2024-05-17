@@ -6,7 +6,8 @@
 
 using namespace std;
 
-// Function to read the map txt file and parse through it
+
+// Function to read the map txt file and parse through it //
 string MapParse(string mapFiletxt) { //Reads the map txt file
 	ifstream map(mapFiletxt);
 
@@ -29,6 +30,7 @@ string MapParse(string mapFiletxt) { //Reads the map txt file
 }
 
 string map = MapParse("map.txt");
+
 
 
 int main()
@@ -68,15 +70,68 @@ int main()
 	// Fruit timer (to despawn fruit after 10 seconds)
 	int fruitTimer = 0;
 
-
+	 
 
 	InitWindow(screenWidth, screenHeight, "Pac Dots");
+
+	// Image/Texture loading
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	// Pacman gif loading and resizing
+	Image Pacman = LoadImage("PACMAN.gif");
+	ImageResize(&Pacman, 20, 20);
+	Texture2D pacmanTexture = LoadTextureFromImage(Pacman);
+
+
+//	Image PowerPac = LoadImage("powerpac.png");
+//	ImageResize(&PowerPac, 20, 20);
+//	Texture2D powerPacTexture = LoadTextureFromImage(PowerPac);
+
+	// Ghost image loading and resizing
+	Image Inky = LoadImage("inky.png");
+	ImageResize(&Inky, 20, 20);
+	Texture2D inkyTexture = LoadTextureFromImage(Inky);
+
+	Image Blinky = LoadImage("blinky.png");
+	ImageResize(&Blinky, 20, 20);
+	Texture2D blinkyTexture = LoadTextureFromImage(Blinky);
+
+	Image Pinky = LoadImage("pinky.png");
+	ImageResize(&Pinky, 20, 20);
+	Texture2D pinkyTexture = LoadTextureFromImage(Pinky);
+
+	Image DaveChapelle = LoadImage("Dave.png");
+	ImageResize(&DaveChapelle, 20, 20);
+	Texture2D daveChapelleTexture = LoadTextureFromImage(DaveChapelle);
+
+		// Scared Ghost image loading and resizing
+	Image ScaredGhost = LoadImage("ScaredGhost.png");
+	ImageResize(&ScaredGhost, 20, 20);
+	Texture2D scaredGhostTexture = LoadTextureFromImage(ScaredGhost);
+	
+	// Fruit image loading and resizing
+	Image Cherry = LoadImage("cherry.png");
+	ImageResize(&Cherry, 25, 25);
+	Texture2D cherryTexture = LoadTextureFromImage(Cherry);
+
+	Image Strawberry = LoadImage("strawberry.png");
+	ImageResize(&Strawberry, 18, 18);
+	Texture2D strawberryTexture = LoadTextureFromImage(Strawberry);
+
+
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 	SetTargetFPS(fps);
 
 	// Create Pacman
 	Rectangle pacman = { screenWidth / 2, 26 * 20 , 20, 20 };
 
+	
 	
 	// Main game loop
 
@@ -103,7 +158,7 @@ int main()
 			if (map[i] == '8') {
 				DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 5, PINK);
 			}
-
+			
 
 			// When pacman collides with a pellet, the pellet is removed from the map and checks with score counter
 			if (pacman.x == i % 28 * 20 && pacman.y == i / 28 * 20 && map[i] == '7') {
@@ -112,7 +167,7 @@ int main()
 				dotCounter++;
 				cout << "Score: " << score << endl;
 			}
-
+			
 			// When pacman collides with a power pellet, the power pellet is removed from the map and checks with score counter
 			if (pacman.x == i % 28 * 20 && pacman.y == i / 28 * 20 && map[i] == '8') {
 				map[i] = '0';
@@ -125,7 +180,8 @@ int main()
 
 			// Fruit spawning (first fruit spawns after 70 dots are eaten on '2' and despawns after 10 seconds)
 			if (dotCounter >= 70 && map[i] == '2') {
-				DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 5, RED);
+				//DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 5, RED);
+				DrawTextureEx(cherryTexture, { static_cast<float>(i % 28 * 20), static_cast<float>(i / 28 * 20) }, 0, 1, WHITE);
 				fruitTimer++;
 				if (fruitTimer == fps * 10) {
 					map[i] = '0';
@@ -141,7 +197,8 @@ int main()
 		
 			// Second fruit spawn on '3' after 170 dots are eaten
 			if (dotCounter >= 170 && map[i] == '3') {
-				DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 5, PINK);
+				//DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 5, PINK);
+				DrawTextureEx(strawberryTexture, { static_cast<float>(i % 28 * 20), static_cast<float>(i / 28 * 20) }, 0, 1, WHITE);
 				fruitTimer++;
 				if (fruitTimer == fps * 10) {
 					map[i] = '0';
@@ -176,11 +233,27 @@ int main()
 
 
 		// Draw Pacman character with starting position in middle bottom of screen
-		DrawRectangle(pacman.x, pacman.y, pacman.width, pacman.height, YELLOW);
+		//DrawRectangle(pacman.x, pacman.y, pacman.width, pacman.height, YELLOW);
+
+		// Draw Pacman as a circle
+		DrawCircle(pacman.x + 10, pacman.y + 10, 10, YELLOW);
+
+		
+		
+		
+		
+	
+		// Every other frame, draw Pacman with a pink rectangle to simulate blinking when power pellet is active
+		if (powerPellet == true && frameCounter % 5 == 0) {
+			DrawCircle(pacman.x + 10, pacman.y + 10, 10, PINK);
+		}
+		else
+		
+
 
 		if (powerPellet == true && frameCounter < frameOffset) {
 			//cout << "Power pellet active. Speed: " << speed << endl;				(debugging)
-			DrawRectangle(pacman.x, pacman.y, pacman.width, pacman.height, PINK);
+			//DrawRectangle(pacman.x, pacman.y, pacman.width, pacman.height, PINK);
 			//speed = 4;																			//(this currently creates issues with collision)
 		}
 		else if (powerPellet == true && frameCounter >= frameOffset) {
@@ -218,6 +291,7 @@ int main()
 		}
 
 	
+	
 		// All for testing purposes
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//	
@@ -242,9 +316,11 @@ int main()
 	//	// Draw the speed in the top right corner using the speed variable without format text
 	//	DrawText(("Speed: " + to_string(speed)).c_str(), 375, 160, 20, WHITE);
 	//
-	//
+	
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+		
 
 
 		// Check for collision with walls
@@ -271,7 +347,14 @@ int main()
 			}
 		}
 
-
+		// Draw Texture
+		DrawTexture(inkyTexture, 0, 0, WHITE);
+		DrawTexture(blinkyTexture, 0, 20, WHITE);
+		DrawTexture(pinkyTexture, 0, 40, WHITE);
+		DrawTexture(scaredGhostTexture, 0, 60, WHITE);
+		DrawTexture(daveChapelleTexture, 0, 80, WHITE);
+		DrawTexture(cherryTexture, 0, 100, WHITE);
+		DrawTexture(strawberryTexture, 0, 120, WHITE);
 
 
 		EndDrawing();
