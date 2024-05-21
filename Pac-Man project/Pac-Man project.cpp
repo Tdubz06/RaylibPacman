@@ -76,17 +76,7 @@ int main()
 
 	// Image/Texture loading
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-	// Pacman gif loading and resizing
-	Image Pacman = LoadImage("PACMAN.gif");
-	ImageResize(&Pacman, 20, 20);
-	Texture2D pacmanTexture = LoadTextureFromImage(Pacman);
-
-
-//	Image PowerPac = LoadImage("powerpac.png");
-//	ImageResize(&PowerPac, 20, 20);
-//	Texture2D powerPacTexture = LoadTextureFromImage(PowerPac);
-
+	
 	// Ghost image loading and resizing
 	Image Inky = LoadImage("inky.png");
 	ImageResize(&Inky, 20, 20);
@@ -121,18 +111,11 @@ int main()
 
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
 	SetTargetFPS(fps);
 
 	// Create Pacman
 	Rectangle pacman = { screenWidth / 2, 26 * 20 , 20, 20 };
 
-	
-	
 	// Main game loop
 
 	while (!WindowShouldClose())
@@ -159,7 +142,6 @@ int main()
 				DrawCircle(i % 28 * 20 + 10, i / 28 * 20 + 10, 5, PINK);
 			}
 			
-
 			// When pacman collides with a pellet, the pellet is removed from the map and checks with score counter
 			if (pacman.x == i % 28 * 20 && pacman.y == i / 28 * 20 && map[i] == '7') {
 				map[i] = '0';
@@ -211,10 +193,6 @@ int main()
 					cout << "Score: " << score << endl;
 				}
 			}
-
-		
-
-
 		}
 
 		// When Pacman leaves the screen, it reappears on the opposite side
@@ -232,25 +210,15 @@ int main()
 		}
 
 
-		// Draw Pacman character with starting position in middle bottom of screen
-		//DrawRectangle(pacman.x, pacman.y, pacman.width, pacman.height, YELLOW);
-
-		// Draw Pacman as a circle
+		
+		// Draw Pacman as a circle in starting position
 		DrawCircle(pacman.x + 10, pacman.y + 10, 10, YELLOW);
 
-		
-		
-		
-		
-	
 		// Every other frame, draw Pacman with a pink rectangle to simulate blinking when power pellet is active
 		if (powerPellet == true && frameCounter % 5 == 0) {
 			DrawCircle(pacman.x + 10, pacman.y + 10, 10, PINK);
 		}
-		else
 		
-
-
 		if (powerPellet == true && frameCounter < frameOffset) {
 			//cout << "Power pellet active. Speed: " << speed << endl;				(debugging)
 			//DrawRectangle(pacman.x, pacman.y, pacman.width, pacman.height, PINK);
@@ -262,11 +230,9 @@ int main()
 			//speed = 2;																			//(Not needed when speed isn't changed on collection)												
 		}
 
-
 		// This is for constant movement of pacman
 		pacman.x += velX;
 		pacman.y += velY;
-
 
 		// Move Pacman character
 		if (IsKeyDown(KEY_D))
@@ -290,7 +256,6 @@ int main()
 			velX = 0;
 		}
 
-	
 	
 		// All for testing purposes
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -319,10 +284,6 @@ int main()
 	
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-		
-
-
 		// Check for collision with walls
 		for (int i = 0; i < map.length(); i++) {
 			if (map[i] == '1' ) {
@@ -347,15 +308,20 @@ int main()
 			}
 		}
 
-		// Draw Texture
-		DrawTexture(inkyTexture, 0, 0, WHITE);
-		DrawTexture(blinkyTexture, 0, 20, WHITE);
-		DrawTexture(pinkyTexture, 0, 40, WHITE);
-		DrawTexture(scaredGhostTexture, 0, 60, WHITE);
-		DrawTexture(daveChapelleTexture, 0, 80, WHITE);
-		DrawTexture(cherryTexture, 0, 100, WHITE);
-		DrawTexture(strawberryTexture, 0, 120, WHITE);
 
+		//Check textures are loaded
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+	//	// Draw Texture
+	//	DrawTexture(inkyTexture, 0, 0, WHITE);
+	//	DrawTexture(blinkyTexture, 0, 20, WHITE);
+	//	DrawTexture(pinkyTexture, 0, 40, WHITE);
+	//	DrawTexture(scaredGhostTexture, 0, 60, WHITE);
+	//	DrawTexture(daveChapelleTexture, 0, 80, WHITE);
+	//	DrawTexture(cherryTexture, 0, 100, WHITE);
+	//	DrawTexture(strawberryTexture, 0, 120, WHITE);
+
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 		EndDrawing();
 	}
