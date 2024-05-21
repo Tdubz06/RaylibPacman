@@ -1,0 +1,40 @@
+﻿  Pac-Man project.cpp
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(260,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(260,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(260,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(260,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(264,97): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(264,73): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(264,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(264,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(265,105): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(265,79): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(265,57): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(265,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(266,101): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(266,76): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(266,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(266,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(267,133): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(267,100): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(267,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(267,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(272,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(272,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(272,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(272,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(328,33): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(329,33): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(337,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(338,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(367,48): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(367,48): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(367,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(367,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(438,48): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(438,48): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(438,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(438,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Pac-Man project.vcxproj -> C:\Users\tyson.scobie24\Desktop\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
