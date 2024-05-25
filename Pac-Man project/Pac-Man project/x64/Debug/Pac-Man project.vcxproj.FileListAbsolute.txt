@@ -1,0 +1,2 @@
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\x64\Debug\raylib.dll
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project\x64\Debug\Pac-Man .50BA23E9.Up2Date

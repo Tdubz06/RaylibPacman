@@ -1,0 +1,12 @@
+﻿  Pac-Man project.cpp
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(237,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(237,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(241,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(241,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(312,48): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(312,48): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(312,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(312,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Pac-Man project.vcxproj -> C:\Users\unive\Downloads\RaylibPacman-dev(1)\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

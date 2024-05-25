@@ -45,6 +45,9 @@ int main()
 	// Score counter
 	int score = 0;
 
+	// Lives Counter
+	int lives = 3;
+
 	// Pacman velocity (this is for constant movement)
 	int velX = 0;
 	int velY = 0;
@@ -70,6 +73,8 @@ int main()
 	// Fruit timer (to despawn fruit after 10 seconds)
 	int fruitTimer = 0;
 
+	// Start the program
+	bool start = false;
 	 
 
 	InitWindow(screenWidth, screenHeight, "Pac Dots");
@@ -116,6 +121,23 @@ int main()
 	// Create Pacman
 	Rectangle pacman = { screenWidth / 2, 26 * 20 , 20, 20 };
 
+	// Mouse Position
+	Vector2 mousePoint = { 0.0f, 0.0f };
+
+	// Define end screen
+	Rectangle screen = { 40, screenHeight / 2 - 200, screenWidth - 80, screenHeight / 2 + 40 };
+	Rectangle screenText = { screen.width, screen.height, screen.x - 40, screen.y - 40 };
+
+	Rectangle screenButtonText1 = { screen.width, screen.height, screen.x - 40, screen.y - 40 };
+	Rectangle screenButton1 = { screenButtonText1.x / 4 - 43, screenButtonText1.y - 8, screen.x * 4 + 7, screen.y / 5 };
+
+	Rectangle screenButtonText2 = { screen.width, screen.height, screen.x - 40, screen.y - 40 };
+	Rectangle screenButton2 = { screenButtonText1.x / 2 + 60, screenButtonText1.y - 8, screen.x * 4 + 19, screen.y / 5 };
+
+	// Fonts
+	Font titleFont = LoadFont("fonts/titleFont.ttf");
+	Font livesFont = LoadFont("fonts/livesFont.ttf");
+
 	// Main game loop
 
 	while (!WindowShouldClose())
@@ -126,7 +148,7 @@ int main()
 
 		frameCounter++;
 
-		// Draw map from map.txt file										// Any 2 and 3 on the map is where fruit will be placed
+		// Draw map from map.txt file							// Any 2 and 3 on the map is where fruit will be placed
 		for (int i = 0; i < map.length(); i++) {
 			if (map[i] == '1') {
 				DrawRectangle(i % 28 * 20, i / 28 * 20, 20, 20, DARKBLUE);
@@ -256,34 +278,6 @@ int main()
 			velX = 0;
 		}
 
-	
-		// All for testing purposes
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	//	
-	//	// Draw the Score in the top left corner using the score variable without format text
-	//	DrawText(("Score: " + to_string(score)).c_str(), 10, 10, 20, WHITE);
-	//	
-	//	// Draw the frame counter in the top right corner using the frame counter variable without format text
-	//	DrawText(("Frame: " + to_string(frameCounter)).c_str(), 375, 10, 20, WHITE);
-	//
-	//	// Draw the dot counter in the top right corner using the dot counter variable without format text
-	//	DrawText(("Dot Counter: " + to_string(dotCounter)).c_str(), 375, 40, 20, WHITE);
-	//
-	//	// Draw the fruit timer in the top right corner using the fruit timer variable without format text
-	//	DrawText(("Fruit Timer: " + to_string(fruitTimer)).c_str(), 375, 70, 20, WHITE);
-	//
-	//	// Draw the power pellet bool in the top right corner using the power pellet variable without format text
-	//	DrawText(("Power Pellet: " + to_string(powerPellet)).c_str(), 375, 100, 20, WHITE);
-	//
-	//	// Draw the frame offset in the top right corner using the frame offset variable without format text
-	//	DrawText(("Frame Offset: " + to_string(frameOffset)).c_str(), 375, 130, 20, WHITE);
-	//
-	//	// Draw the speed in the top right corner using the speed variable without format text
-	//	DrawText(("Speed: " + to_string(speed)).c_str(), 375, 160, 20, WHITE);
-	//
-	
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 		// Check for collision with walls
 		for (int i = 0; i < map.length(); i++) {
 			if (map[i] == '1' ) {
@@ -308,22 +302,80 @@ int main()
 			}
 		}
 
+		// DEBUG TESTING LIVES ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		if (IsKeyPressed(KEY_L)) {
+			lives--;
+		}
+		//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-		//Check textures are loaded
-	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		
-	//	// Draw Texture
-	//	DrawTexture(inkyTexture, 0, 0, WHITE);
-	//	DrawTexture(blinkyTexture, 0, 20, WHITE);
-	//	DrawTexture(pinkyTexture, 0, 40, WHITE);
-	//	DrawTexture(scaredGhostTexture, 0, 60, WHITE);
-	//	DrawTexture(daveChapelleTexture, 0, 80, WHITE);
-	//	DrawTexture(cherryTexture, 0, 100, WHITE);
-	//	DrawTexture(strawberryTexture, 0, 120, WHITE);
+		// Get mouse position
+		mousePoint = GetMousePosition();
 
-	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		// Draw the UI
+		DrawTextEx(titleFont, "Pacman", { screenWidth / 2 - 60, screenHeight / 60 }, 20, 3, WHITE);
+		DrawTextEx(titleFont, TextFormat("Score: %i", score), { screenWidth / 2 - 100, screenHeight / 20 }, 20, 3, WHITE);
 
+		// Draw lives at the bottom left corner
+		DrawTextEx(titleFont, TextFormat("Lives: "), { screenWidth / 40, screenHeight - 38 }, 35, 3, WHITE);
+		if (lives == 3) {
+			DrawTextEx(livesFont, "ccc", { screenWidth / 40 + 180, screenHeight - 32 }, 35, 3, YELLOW);
+		}
+		else if (lives == 2) {
+			DrawTextEx(livesFont, "cc", { screenWidth / 40 + 180, screenHeight - 32 }, 35, 3, YELLOW);
+		}
+		else if (lives == 1) {
+			DrawTextEx(livesFont, "c", { screenWidth / 40 + 180, screenHeight - 32 }, 35, 3, YELLOW);
+		}
+		// When lives reach 0, Pacman stops moving and the game over screen is displayed
+		else if (lives == 0) {
+			velY = 0;
+			velX = 0;
+
+			DrawTextEx(livesFont, "", { screenWidth / 40 + 180, screenHeight - 32 }, 35, 3, YELLOW);
+			DrawRectangleRec(screen, BLACK);
+			DrawRectangleLinesEx(screen, 10, BLUE);
+
+			// Draw the end screen text and buttons
+			DrawTextEx(titleFont, "Game Over", { screenText.x / 2 - 45, screenText.y / 2 }, 20, 3, WHITE);
+
+			DrawRectangleRec(screenButton1, PINK);
+			DrawRectangleLinesEx(screenButton1, 4, BLUE);
+			DrawTextEx(titleFont, "Play Again", { screenButtonText1.x / 4 - 35, screenButtonText1.y }, 15, 3, WHITE);
+
+			DrawRectangleRec(screenButton2, RED);
+			DrawRectangleLinesEx(screenButton2, 4, BLUE);
+			DrawTextEx(titleFont, "End Session", { screenButtonText2.x - 170, screenButtonText2.y }, 15, 3, WHITE);
+
+			if (CheckCollisionPointRec(mousePoint, screenButton1))
+			{
+				if (IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+				{
+
+					score = 0;
+					lives = 3;
+					pacman.x = screenWidth / 2;
+					pacman.y = 26 * 20;
+					dotCounter = 0;
+					fruitTimer = 0;
+
+
+					map = MapParse("map.txt");
+				}
+			}
+
+			if (CheckCollisionPointRec(mousePoint, screenButton2))
+			{
+				if (IsMouseButtonDown(MOUSE_BUTTON_LEFT))
+				{
+					return 0;
+				}
+
+
+			}
+		}
+	
 		EndDrawing();
+		CloseWindow();
 	}
 
 
