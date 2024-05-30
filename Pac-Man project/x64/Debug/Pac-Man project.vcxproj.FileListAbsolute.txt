@@ -2,3 +2,6 @@ C:\Users\unive\source\repos\Pac-Man project\Pac-Man project\x64\Debug\Pac-Man .5
 C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.exe
 C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.vcxproj.CopyComplete
 C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev\Pac-Man project\x64\Debug\raylib.dll
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.exe
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.vcxproj.CopyComplete
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\x64\Debug\raylib.dll
