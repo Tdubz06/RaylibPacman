@@ -1,0 +1,30 @@
+﻿  Pac-Man project.cpp
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(82,48): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(82,48): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(82,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(82,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(461,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(461,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(465,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(465,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(508,48): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(508,48): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(508,79): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(508,79): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(554,55): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(554,41): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(560,56): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(560,42): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(561,61): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(561,47): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(566,56): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(566,42): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(614,57): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(614,43): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(615,62): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(615,48): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(620,57): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\Pac-Man project.cpp(620,43): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  Pac-Man project.vcxproj -> C:\Users\COLE.LAMB15\Downloads\RaylibPacman-dev(2)\RaylibPacman-dev\Pac-Man project\x64\Debug\Pac-Man project.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
